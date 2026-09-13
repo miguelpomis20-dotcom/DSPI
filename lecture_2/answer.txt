@@ -1,0 +1,77 @@
+6.2:
+Part 1:
+77 6F 72 6C 64
+
+Part 2:
+The Starting position of "hello world!" in hello_world.doc: 0x00001840
+
+The hex values at this position are:
+68 65 6C 6C 6F 20 77 6F 72 6C 64 21
+which translates to "hello world!" in ASCII.
+
+Part 3:
+- hello_world(1bit).bmp: The image data starts at position 0x34 (52 bytes)
+- hello_world(24bit).bmp: The image data starts at position 0x34 (52 bytes)
+
+Part 4:
+ # # ### #   #    ##     #   #  ##  ###  #   ###  #             
+ # # #   #   #   #  #    #   # #  # #  # #   #  # #             
+ ### ##  #   #   #  #    # # # #  # ###  #   #  # #             
+ # # #   #   #   #  #    # # # #  # # #  #   #  #               
+ # # ### ### ###  ##      # #   ##  #  # ### ###  #      
+
+6.3:
+Question 1:
+When I double-click hello_world.exe, Windows tries to run it as an executable program. However, since the file contains text ("hello world!") instead of actual machine code, Windows cannot execute it. I get an error message saying "This App can't run on your PC".
+
+Question 2:
+id changing the extension change the bytes inside the file?
+Answer: No, changing the file extension from .txt to .exe did not change the bytes inside the file. The file extension is just part of the filename that tells Windows which program to use to open the file. When I uploaded hello_world.exe to the Hex Viewer, the hex values were exactly the same as when the file was named hello_world.txt. The bytes remained "68 65 6C 6C 6F 20 77 6F 72 6C 64 21" which is "hello world!" in ASCII.
+
+Question 3:
+when I try to change the file content, I get an error message saying "The file is set to Read-only".
+
+7:
+Question 1:
+I have 1 disk on my machine
+
+Question 2:
+Disk O:
+Model: SAMSUNG MZVLQ512HBLU-00B00
+Capacity: 512 GB
+Sequential Read Speed: Up to 3,100 MB/s
+Sequential Write Speed: Up to 1,800 MB/s
+
+Question 3:
+Disk 0 has 4 partitions:
+1. System Partition
+   - Capacity: 100 MB
+   - Function: Contains boot files required to start Windows
+
+2. Reserved Partition
+   - Capacity: 16 MB
+   - Function: Reserved space used by Windows for disk management
+
+3. Primary Partition (C:)
+   - Capacity: 475 GB
+   - Function: Contains Windows OS, programs, and user data
+
+4. Recovery Partition
+   - Capacity: 1024 MB
+   - Function: Contains recovery tools for troubleshooting Windows
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,29 @@
+5 DEVICE DRIVERS:
+1. How many active drivers are currently running on your system?
+182 drivers
+
+2. Where are your WIFI and network drivers located, and what are their names?
+WIFI Adapter:
+The Name:
+`MediaTek Wi-Fi 6 MT7921 Wireless LAN Card`
+
+Location:
+`C:\WINDOWS\system32\DRIVERS\mtkwl6ex.sys`
+
+Ethernet Adapter:
+The Name:
+`Killer E2600 Gigabit Ethernet Controller`
+
+Location:
+`C:\WINDOWS\system32\DRIVERS\e2kw10x64.sys`
+
+6 Processes
+
+6.1 Monitor Active Processes:
+RAM used 16300 MB
+CPU used: 5%
+
+6.2 Find Active Process Locations:
+C:\Users\Miguel\AppData\Local\Programs\Opera GX
+
+

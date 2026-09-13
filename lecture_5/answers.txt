@@ -1,0 +1,89 @@
+4 IP ADDRESS, ROUTING & WEBREQUESTS
+
+4.1 Public IP + Local IP + Default Gateway
+
+Public IP:
+80.114.153.42
+
+Local IP:
+Link-local IPv6 Address
+fe80::53f0:b4a7:e16b:9d19%3
+
+IPv4 Address:
+192.168.1.101
+
+Default Gateway:
+192.168.1.1
+
+4.2 Repeat with VPN ON
+
+Public IP:
+80.114.153.42 (unchanged)
+
+Local IP:
+IPv4 Address:
+192.168.1.101 (unchanged)
+
+Default Gateway:
+192.168.1.1 (unchanged)
+
+The public IP did not change after enabling the VPN. This is most likely
+because the VPN is configured with split tunneling, meaning only traffic
+destined for specific (university) resources is routed through the VPN,
+while general internet requests such as curl ifconfig.me still go out via
+my normal ISP connection. As a result, the internet-facing IP address
+remains the ISP-assigned one. The local IP and default gateway also stay
+the same because they describe my local network, which the VPN does not
+alter.
+
+4.3 Private vs Public IP
+
+Local IP: Private
+Gateway: Private
+Public IP: Public
+
+4.4 Geo-location of Your IP
+My IP location:
+{
+  "ip": "80.114.153.42",
+  "hostname": "5072992a.static.ziggozakelijk.nl",
+  "city": "Leiden",
+  "region": "South Holland",
+  "country": "NL",
+  "loc": "52.1583,4.4931",
+  "org": "AS33915 Vodafone Libertel B.V.",
+  "postal": "2311",
+  "timezone": "Europe/Amsterdam",
+  "readme": "https://ipinfo.io/missingauth"
+}
+
+4.5 Trace Route to Google
+The First hub is my default gateway: 192.168.1.1
+
+The Last hub is a Google server: 172.217.171.99
+
+Other observations:
+- Hop count: ~10-15 hops.
+- Latency increases with each hop because packets travel further
+  and through more routers.
+- Some hops show "* * *" meaning they did not reply to the ICMP
+  request (this is normal and not an error).
+
+4.6 Geo-location of Google Data Center
+
+Command: curl ipinfo.io/172.217.171.99
+Result:
+{
+  "ip": "172.217.171.99",
+  "hostname": "hhn03s02-in-f3.1e100.net",
+  "city": "Lelystad",
+  "region": "Flevoland",
+  "country": "NL",
+  "loc": "52.5083,5.4750",
+  "org": "AS15169 Google LLC",
+  "postal": "8224",
+  "timezone": "Europe/Amsterdam",
+  "readme": "https://ipinfo.io/missingauth"
+}
+
+

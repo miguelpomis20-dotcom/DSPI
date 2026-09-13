@@ -1,0 +1,49 @@
+Section 4: COMPONENT IDENTIFICATION
+
+Question 1:
+CPU model: AMD Ryzen 7 5800 H with Radeon Graphics
+Number of Cores: 8
+Core Speed: 3.20 GHz
+
+Question 2:
+RAM Type: DDR4 SODIMM
+Part Number: ACR32D4S2S8ME-16
+D22.27553S.001
+Speed: 3200 MT/s
+Total RAM: 32 GB
+
+Question 3:
+GPU Model: NVIDIA GeForce RTX 3060
+VRAM: 12 GB
+
+Question 4:
+BIOS Version: Insyde Corp V1.08 
+Date/Last Updated: 07/21/2021
+
+Section 5: BOOT ORDER
+Boot Order:
+1. Windows Boot Manager
+2. SSD: Samsung MZVLQ512HBLU-00B00
+3. USB Hard Drive
+4. USB CD/DVD
+5. Network (PXE)
+
+USB Boot is supported and listed in the boot order. I can insert a bootable USB drive and select it from the boot menu by pressing [F12] during startup.
+
+Section 6:
+Question 1:
+Current Screen/Display Resolution: 1920 x 1080
+
+Question 2:
+First the screen rotates 90 degrees. Then the display becomes taller that it is wide. Finally everything shifts to fit the new orientation.
+
+Question 3:
+Common Reasons for using Portrait Mode:
+- Reading long documents (PDFs, Word, files)
+- Coding (See more lines of code)
+- Web browsing (see more content vertically)
+- Reading articles or eBooks
+
+Question 4:
+First everything becomes larger, icons and text appear pixelated or blurry. Then the screen shows less content overall. Also the display may appear stretched.
+
